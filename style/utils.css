@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "ManropeRegular";
+    src: url(../Fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeBold';
+    src: url(../Fonts/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeMedium';
+    src: url(../Fonts/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeSemi';
+    src: url(../Fonts/Manrope-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'TTSuber';
+    src: url(../Fonts/TTSupermolotNeue-ExpDBold.ttf);
+}
+
+.header-image-block{
+    background-color: grey;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image-block img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background-color: grey;
+}
+
+.info-text-container {
+    margin: 64px 0px;
+}
+
+.info-text-block h2 {
+    text-align: center;
+    font-family: ManropeRegular;
+}
+
+.info-text-block p {
+    margin: 32px 64px;
+    font-family: ManropeRegular;
+}
+
+.utils-container {
+    margin: 64px 0px;
+}
+
+/* .utils-block{
+    display: flex;
+    justify-content: center;
+}
+
+.util-c{
+    max-width: 1920px;
+    width: 70%;
+} */
+
+.util-row {
+    margin: 40px 0px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.left-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .left-block{
+} */
+
+/* .right-block{
+    background-color: olivedrab;
+} */
+
+.util-img {
+    width: 100%;
+    height: auto;
+}
+
+.right-block {
+    padding: 32px;
+}
+
+.util-text-block {
+    height: 350px;
+    overflow-y: scroll;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    box-shadow: 2px 2px 7px rgb(160, 154, 154);
+}
+
+.util-text-block::-webkit-scrollbar {
+    display: none;
+}
+
+.util-text-block {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.util-text-block div {
+    padding: 48px;
+}
+
+.over-line {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 20px;
+    padding: 0px 10px;
+    width: max-content;
+    background-color: white;
+    font-family: TTSuber;
+}
+
+.util-point {
+    list-style-type: number;
+}
+
+.left-block{
+    background-color: slategrey;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:994px) and (min-width:601px) {
+    .util-img{
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .util-row {
+        height: auto;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:300px) {
+    .util-row {
+        height: auto;
+    }
+
+    .util-text-block div {
+        padding: 16px 12px;
+    }
+}

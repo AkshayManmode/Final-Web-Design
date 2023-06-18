@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "ManropeRegular";
+    src: url(../Fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeBold';
+    src: url(../Fonts/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeMedium';
+    src: url(../Fonts/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeSemi';
+    src: url(../Fonts/Manrope-SemiBold.ttf);
+}
+
+.header-image-block{
+    background-color: grey;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image-block img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.info-text-container{
+    margin: 64px 0px;
+}
+
+.info-text-block h2{
+    text-align: center;
+    font-family: ManropeRegular;
+}
+
+.info-text-block p{
+    margin: 32px 64px;
+    font-family: ManropeRegular;
+}
+
+.time-line-container{
+    margin: 64px 0px;
+}
+
+.time-line-header-block-block{
+    margin: 16px 0px;
+}
+
+.time-line-header-block h2{
+    text-align: center;
+    font-family: ManropeRegular;
+}
+
+.time-line-header-block{
+    margin: 64px 0px;
+}
+
+.right-image{
+    height: 300px;
+}
+
+.time-animation-block-1{
+    opacity: 0;
+    margin: 32px 0px;
+}
+
+.time-animation-block-2{
+    opacity: 0;
+    margin: 32px 0px;
+}
+
+.time-animation-block-1.show{
+    animation: rightToLeft 1s forwards;
+    -webkit-animation: rightToLeft 1s forwards;
+    -moz-animation: rightToLeft 1s forwards;
+    -o-animation: rightToLeft 1s forwards;
+}
+
+.time-animation-block-2.show{
+    animation: leftToRight 1s forwards;
+    -webkit-animation: leftToRight 1s forwards;
+    -moz-animation: leftToRight 1s forwards;
+    -o-animation: leftToRight 1s forwards;
+}
+
+
+@keyframes rightToLeft {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes leftToRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+        /* padding-left: 0px; */
+    }
+}
+
+.timeline-italic-heading{
+    font-family: ManropeRegular;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.timeline-card{
+    border-radius: 10px;
+    width: 500px;
+    /* height: 500px; */
+}
+
+.timeline-card-block{
+    width: 100%;
+    /* height: 50px; */
+    background-color: yellow;
+}
+
+.timeline-card-block h4{
+    padding: 20px 20px;
+    font-weight: bolder;
+}
+
+.timeline-card{
+    background-color: rgb(39, 33, 33);
+}
+
+.timeline-card-text p{
+    padding: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+.info-text-block div{
+    margin: 32px 0px;
+}
+
+.info-text-block div li{
+    list-style-type: square;
+    margin: 10px 64px;
+    font-family: ManropeRegular;
+}
+
+@media screen and (max-width:973px) and (min-width:600px) {
+    .time-animation-block-1.show{
+        display: flex;
+        justify-content: center;
+    }
+
+    .time-animation-block-2.show{
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-image-block{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:576px) and (min-width:300px) {
+    
+    .info-text-block p {
+        margin: 32px 16px;
+    }
+
+    .time-animation-block-1.show{
+        display: flex;
+        justify-content: center;
+    }
+
+    .time-animation-block-2.show{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .right-image-block{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* .time-animation-block-2.show .right-image-block{
+        flex-direction: column;
+    } */
+
+    .timeline-card{
+        width: 80%;
+    }
+
+    .right-image{
+        width: 80%;
+        height: auto;
+    }
+
+    .header-img{
+        width: 100vh;
+    }
+
+    .info-text-block div li{
+        list-style-type: square;
+        margin: 0px 16px;
+    }
+}

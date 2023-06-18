@@ -1,0 +1,74 @@
+<nav>
+    <div class="logo">
+      <a href="../index.html">
+         <img src="../IoLogo/IONET.png" class="iord-logo-image" alt="" srcset="">
+      </a>
+    </div>
+
+    <div class="menu-icon">
+      <span class="fas fa-bars"></span>
+   </div>
+
+    <div class="tab-section">
+       <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+        <div class="nav-items">
+           <li><a class="navbar-tab-button" href="../Tab_Feature/about-us.html">About Us</a></li>
+           <li><a class="navbar-tab-button" href="../Tab_Feature/battery.html">IONET Batteries</a></li>
+           <li><a class="navbar-tab-button" href="../Tab_Feature/ionet-station.html">IONET Station</a></li>
+           <li><a class="navbar-tab-button" href="../Tab_Feature/evm.html">IONET Evm</a></li>
+           <li><a class="navbar-tab-button" href="">IO Ecosystem</a></li>
+           <li><a class="navbar-tab-button" href="../Tab_Feature/network.html">IO Network</a></li>
+           <li><a class="navbar-tab-button" href="../Tab_Feature/utils.html">IONET Utility</a></li>
+           
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div> 
+    </div>
+ </nav>
+
+<script>
+   const menuBtn = document.querySelector(".menu-icon");
+   const searchBtn = document.querySelector(".search-icon");
+   const cancelBtn = document.querySelector(".cancel-icon");
+   const items = document.querySelector(".nav-items");
+   const form = document.querySelector("form");
+   var x = window.scrollX;
+   var y = window.scrollY;
+   searchBtn.remove()
+   menuBtn.onclick = ()=>{
+
+      items.classList.add("active");
+      menuBtn.classList.add("hideElement");
+      menuBtn.classList.remove("menu-icon")
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      document.body.classList.add("disable-scroll");
+
+      if(window.innerWidth <576){
+         document.getElementById("map").style.zIndex="1";
+      }else{
+         document.getElementById("map").style.zIndex="0";
+      }
+
+   }
+   cancelBtn.onclick = ()=>{
+
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      // form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+      document.body.classList.remove("disable-scroll");
+      menuBtn.classList.add("menu-icon")
+      menuBtn.classList.remove("hideElement");
+
+   }
+   searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+   }
+</script>

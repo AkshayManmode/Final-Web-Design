@@ -1,0 +1,396 @@
+.main-conatiner {
+    height: 500px;
+    position: sticky;
+    background-color: white;
+    /* background-color: rgb(130, 104, 104); */
+    /* position: relative; */
+}
+
+.parallax-1 {
+    background-image: url("./image/IONETMACHINE.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 77%;
+    margin-left: 114%;
+    margin-top: 42px;
+}
+
+.text-block-1 {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+
+}
+
+.para-1 {
+    position: absolute;
+    margin-top: 235px;
+    text-align: center;
+    width: 47vw;
+}
+
+
+.parallax-2 {
+    background-image: url("./image/Flip-ees.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 46px;
+    width: 41%;
+
+}
+
+.text-block-2 {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 696px;
+    margin-top: -497px;
+
+}
+
+.para-2 {
+    position: absolute;
+    margin-top: 235px;
+    text-align: center;
+    width: 47vw;
+}
+
+
+
+.parallax-3 {
+    background-image: url("./image/user-scene-1.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 77%;
+    margin-left: 114%;
+    margin-top: 42px;
+}
+
+.text-block-3 {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+
+}
+
+.para-3 {
+    position: absolute;
+    margin-top: 235px;
+    text-align: center;
+    width: 47vw;
+}
+
+
+.parallax-4 {
+    background-image: url("./image/350-EV-charging-stations.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 46px;
+    width: 41%;
+
+}
+
+.text-block-4 {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 696px;
+    margin-top: -497px;
+
+}
+
+.para-4 {
+    position: absolute;
+    margin-top: 235px;
+    text-align: center;
+    width: 47vw;
+}
+
+
+/* /////////////////////////////////////////2para */
+.parallax-5 {
+    background-color: black;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 77%;
+    margin-left: 114%;
+    margin-top: 42px;
+}
+
+.text-block-5 {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+
+}
+
+.para-5 {
+    position: absolute;
+    margin-top: 235px;
+    text-align: center;
+    width: 47vw;
+}
+
+
+.parallax-6 {
+    background-color: brown;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 46px;
+    width: 41%;
+
+}
+
+.text-block-6 {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 696px;
+    margin-top: -497px;
+
+}
+
+.para-6 {
+    position: absolute;
+    margin-top: 235px;
+    text-align: center;
+    width: 47vw;
+}
+
+
+
+.parallax-7 {
+    background-color: aqua;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 77%;
+    margin-left: 114%;
+    margin-top: 42px;
+}
+
+.text-block-7 {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+
+}
+
+.para-7 {
+    position: absolute;
+    margin-top: 235px;
+    text-align: center;
+    width: 47vw;
+}
+
+
+.parallax-8 {
+    background-color: blueviolet;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 46px;
+    width: 41%;
+
+}
+
+.text-block-8 {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 696px;
+    margin-top: -497px;
+
+}
+
+.para-8 {
+    position: absolute;
+    margin-top: 235px;
+    text-align: center;
+    width: 47vw;
+}
+
+
+.parallax-9 {
+    background-color: chartreuse;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 77%;
+    margin-left: 114%;
+    margin-top: 42px;
+}
+
+.text-block-9 {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+
+}
+
+.para-9 {
+    position: absolute;
+    margin-top: 235px;
+    text-align: center;
+    width: 47vw;
+}
+
+
+.parallax-10 {
+    background-color: violet;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 46px;
+    width: 41%;
+
+}
+
+.text-block-10 {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 696px;
+    margin-top: -497px;
+
+}
+
+.para-10 {
+    position: absolute;
+    margin-top: 235px;
+    text-align: center;
+    width: 47vw;
+}
+
+
+
+.parallax-11 {
+    background-color: teal;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 77%;
+    margin-left: 114%;
+    margin-top: 42px;
+}
+
+.text-block-11 {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+
+}
+
+.para-11 {
+    position: absolute;
+    margin-top: 235px;
+    text-align: center;
+    width: 47vw;
+}
+
+
+.parallax-12 {
+    background-color: springgreen;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 46px;
+    width: 41%;
+
+}
+
+.text-block-12 {
+    height: 500px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 696px;
+    margin-top: -497px;
+
+}
+
+.para-12 {
+    position: absolute;
+    margin-top: 235px;
+    text-align: center;
+    width: 47vw;
+}
+
+/* .global-header-container{
+    position: sticky;
+    z-index: 99;
+} */
+
+.footer-container{
+    position: sticky;
+}
+
+@media (min-width: 1100px) and (max-width: 2000px) {
+    .parallax-2 {
+        background-image: url("./image/Flip-ees.png");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 46px;
+        width: 39%;
+    }
+
+    .parallax-4 {
+        background-image: url("./image/350-EV-charging-stations.jpg");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 46px;
+        width: 39%;
+
+    }
+
+
+
+}
+

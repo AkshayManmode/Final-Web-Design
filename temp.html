@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        window.onload = function () {
+          var chart = new CanvasJS.Chart("chartContainer",
+          {
+              title:{
+              text: "Label 1 Explodes"
+            },
+      
+            data: [
+            {
+             indexLabelPlacement: "outside",
+             type: "pie",
+             dataPoints: [
+             {  y: 27.3, indexLabel:"label1", exploded: true },
+             {  y: 16.8, indexLabel:"label2" },
+             {  y: 15.4, indexLabel:"label3" },
+             {  y: 15.4, indexLabel: "label4", exploded: true },
+             {  y: 13.6, indexLabel:"label5" },
+             {  y: 27.3, indexLabel: "label6" }
+      
+      
+             ]
+           }
+           ]
+         });
+      
+          chart.render();
+        }
+        </script>
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="chartContainer" style="height: 300px; width: 100%;">
+    </div>
+</body>
+</html>

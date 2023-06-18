@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../jquary/jquery-1.10.2.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script defer src="../script/network.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../style/network.css">
+    <link rel="stylesheet" href="../NavBar/nav.css" />
+    <link rel="stylesheet" href="../FixFooter/fixFooter.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+    <title>Network</title>
+</head>
+
+<body onload="networkload()"> 
+
+    <div class="global-header-container" id="nav-bar-placeholder" ></div>
+
+    <div class="container" id="map-field">
+        <div class="intro-header-block">
+            <h1>IONET EV TRANSPORTATION NETWORK</h1>
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-block">
+                    <p class="text">
+                        In today’s transportation system, we see several transportation mediums 
+                        available. However, every transportation medium also brings with it its 
+                        ecosystem and economical constraints. These constraints are of aspects 
+                        such as Infrastructure, Fuel, and Transportation’s Scientific 
+                        compatibility, and play a significant role in shaping its longevity and 
+                        sustainability.
+                    </p>
+                    <p class="text">
+                        We at IONET are representing Electric Vehicles using the IONET Platform.
+                        IONET Platform aims to create, develop, manage, and sustain a network 
+                        for electric vehicle transportation. This network is designed to ensure 
+                        the successful parallel operation of EVs, providing a sustainable and 
+                        viable solution for transportation.
+
+                    </p>
+            </div>
+            <div class="header-block">
+                <h3>Electric Vehicle Network</h3>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 text-block">
+                <p class="text">
+                    Within the transportation network, electric vehicles serve as a parallel 
+                    mode of transportation alongside fuel-based vehicles. Just like any 
+                    vehicle, EVs require a sustainable and survivable network. This network 
+                    encompasses infrastructure that is efficient and does not consume 
+                    excessive time, availability of e-fuel (electric charging), economic 
+                    viability for vehicle users, and industrial opportunities that 
+                    contribute to the survival and growth of the EV industry.
+
+                </p>
+            </div>
+
+            <div class="header-block">
+                <h3>Electric Vehicle Manufacturer Network</h3>
+                
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 text-block">
+                <p class="text">
+                    IONET is dedicated to developing a unique transportation network 
+                    specifically designed for electric vehicles. This initiative aims to 
+                    support the expansion of the EV industry, ultimately contributing to 
+                    enhanced user satisfaction and promoting the adoption of EVs as a 
+                    parallel mode of transportation alongside fuel-based vehicles, while 
+                    making sure that EV Manufacturers’ commitments are met. By providing a 
+                    reliable infrastructure for EVs, IONET is committed to fulfilling the 
+                    transportation needs of EV users and fostering a sustainable 
+                    transportation ecosystem.
+
+
+                </p>
+            </div>
+
+            <div class="header-block">
+                <h3>IONET Ecosystem Network</h3>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 text-block">
+                <p class="text">
+                    IONET is embarking on the development and establishment of a sustainable 
+                    and reliable network for battery swapping and charging. This network 
+                    aims to support the industrial progress of EV manufacturers, fulfill the 
+                    commitments made to end-users, and create opportunities for the growing 
+                    EV industry. Simultaneously, the infrastructure provided by IONET 
+                    addresses existing limitations and failures in EVs, directly impacting 
+                    the life cycle of EV users. Our main goal is to create a 100% 
+                    sustainable and robust IONET EV transportation network catering to 
+                    registered EV Manufacturers and EVs on the IONET Platform.
+
+
+                </p>
+            </div>
+            
+            
+
+            <div class="col-lg-6 map-block">
+                <div id="map"></div>
+            </div>
+            <div class="col-lg-6 graph-block">
+                <div id="chartContainer" style="height: 550px; width: 100%; "> <!-- margin-top: 30px; -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- </div> -->
+
+    <div class="footer-container" id="footer-placeholder"></div>
+
+    <script>
+        $(function () {
+            $("#nav-bar-placeholder").load("../NavBar/nav.html");
+        });
+        $(function () {
+            $("#footer-placeholder").load("../FixFooter/fixFooter.html");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,540 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+} */
+
+
+
+.iord-logo-image {
+  height: 30px;
+  width: auto;
+  padding-left: 80px;
+}
+
+nav {
+  background-color: #1e1e1e;
+  /* background: rgb(9,3,105);
+  background: linear-gradient(127deg, rgba(9,3,105,1) 0%, rgba(27,51,106,1) 0%, rgba(15,61,99,1) 91%); */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 10px;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+nav .nav-items {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 60px;
+  /* padding: 0 0 0 40px; */
+}
+
+nav .nav-items li {
+  list-style: none;
+  padding: 0 15px;
+}
+
+nav .nav-items li a {
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+nav .nav-items li a:hover {
+  color: white;
+}
+
+nav form {
+  display: flex;
+  height: 40px;
+  padding: 2px;
+  background: transparent;
+  min-width: 18% !important;
+  border-radius: 2px;
+}
+
+nav form .search-data {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  font-weight: 500;
+  background: none;
+}
+
+nav form button {
+  padding: 0 15px;
+  color: #fff;
+  font-size: 17px;
+  background: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+nav form button:hover {
+  background: #3bcf5e;
+}
+
+nav .menu-icon,
+nav .cancel-icon,
+nav .search-icon {
+  width: 40px;
+  text-align: center;
+  margin: 0 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+nav .menu-icon span,
+nav .cancel-icon,
+nav .search-icon {
+  display: none;
+}
+
+
+.tab-section {
+  display: inline-flex;
+}
+
+.form-to input[type=text] {
+  width: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('../Images/Search_icon.svg');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  float: left;
+}
+
+.search-box input[type=text]:hover {
+  outline: none;
+  width: 200px;
+}
+
+
+.search-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  /* background:rgb(9, 9, 9); */
+  background-color: transparent;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid white;
+  text-align: start;
+}
+
+.search-box ::placeholder {
+  padding-left: 5px;
+}
+
+.hello {
+  display: inline-flex;
+}
+
+.search-btn {
+  color: rgb(241, 236, 236);
+  float: right;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.fa-search {
+  /* position: fixed; */
+  /* background: #240a6d; */
+  color: rgb(252, 247, 247);
+  /* justify-content: center;
+    display: flex; */
+  text-decoration: none;
+  list-style: none;
+  padding-top: 5px;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 20px;
+  transition: 0.4s;
+  line-height: 50px;
+  width: 0;
+}
+
+.search-box:hover>.search-input {
+  width: 200px;
+  padding: 0 7px;
+}
+
+
+
+#myUL {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 2px;
+  width: 230px;
+  max-height: 360px;
+  color: black;
+  overflow-y: scroll;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#myUL li {
+  display: none;
+
+}
+
+.myli a {
+  color: rgb(226, 228, 230);
+}
+
+.myli a:hover {
+  font-weight: bolder;
+  transition: 0.6s;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+/* 
+
+.text-container{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 1px;
+}
+
+.para::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.25s ease-out;
+}
+
+.para:hover::before{
+  width: 100%;
+} */
+
+.nav-items li a{
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1px;
+}
+
+.navbar-tab-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  border-radius: 15px;
+  background-color: white;
+  transition: width 0.20s ease-out;
+}
+
+.navbar-tab-button:hover::before{
+  /* left: 2px;
+  right: 2px; */
+  width: 100%;
+}
+
+
+.myli {
+  padding-left: 0px;
+}
+
+#myUL {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+#myUL::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.disable-scroll {
+  position: fixed;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1245px) {
+  nav {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 1246px) {
+  nav {
+    padding: 0px;
+    width: 100vw;
+  }
+
+  nav .logo {
+    flex: 2;
+    text-align: start;
+    padding-left: 40px;
+  }
+
+  nav .nav-items {
+    position: fixed;
+    z-index: 99;
+    top: 60px;
+    width: 100%;
+    left: -100%;
+    height: 100%;
+    padding: 10px 50px 0 50px;
+    text-align: center;
+    background: #14181f;
+    display: inline-block;
+    transition: left 0.3s ease;
+  }
+
+  nav .nav-items.active {
+    left: 0px;
+  }
+
+  nav .nav-items li {
+    line-height: 40px;
+    margin-top: 4px;
+  }
+
+  nav .nav-items li a {
+    font-size: 20px;
+  }
+
+  nav form {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: top 0.3s ease, opacity 0.1s ease;
+  }
+
+  nav form.active {
+    top: 95px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  nav form:before {
+    position: absolute;
+    content: "";
+    top: -13px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border: 10px solid transparent;
+    border-bottom-color: #1e232b;
+    margin: -20px 0 0;
+  }
+
+  nav form:after {
+    position: absolute;
+    content: '';
+    height: 60px;
+    padding: 2px;
+    background: #1e232b;
+    border-radius: 2px;
+    min-width: calc(100% + 20px);
+    z-index: -2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  .hideElement {
+    display: none;
+    font-size: 0px;
+  }
+
+  nav .search-icon,
+  nav .menu-icon span {
+    display: block;
+  }
+
+  nav .menu-icon span.hide {
+    display: none;
+  }
+
+  nav .search-icon.hide {
+    display: none;
+  }
+
+  nav .cancel-icon.show {
+    display: block;
+  }
+
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.content header {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.content .text {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.space {
+  margin: 10px 0;
+}
+
+nav .logo.space {
+  color: white;
+  padding: 0 5px 0 0;
+}
+
+@media (max-width: 980px) {
+
+  nav .menu-icon,
+  nav .cancel-icon {
+    margin: 0 20px;
+  }
+
+  nav form {
+    right: 30px;
+  }
+
+  .search-box {
+    margin-top: 8px;
+  }
+
+  .nav-items {
+    height: 70vh;
+    overflow-y: scroll;
+  }
+
+}
+
+@media (max-width: 466px) {
+
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .search-icon {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  .iord-logo-image {
+    padding-left: 20px
+  }
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content header {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.content .text {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.content .space {
+  margin: 10px 0;
+}
+
+@media (max-width: 350px) {
+
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .search-icon {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  .iord-logo-image {
+    padding-left: 20px
+  }
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content header {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.content .text {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.content .space {
+  margin: 10px 0;
+}

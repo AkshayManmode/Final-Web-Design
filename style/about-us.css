@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "TTSuper";
+    src: url(../Fonts/TTSupermolotNeue-ExpDBold.ttf);
+}
+
+@font-face {
+    font-family: mon;
+    src: url(../Fonts/Manrope-Regular.ttf);
+}
+
+.about_us_main_header {
+    font-family: TTsuper;
+}
+
+.vision_main_header {
+    font-family: TTSuper;
+}
+
+.mission_main_header {
+    font-family: TTSuper;
+}
+
+.mission_text {
+    font-family: mon;
+}
+
+.vision_subtext {
+    font-family: mon;
+}
+
+.about_us_subtext {
+    font-family: mon;
+}
+
+
+.About_us_conatiner {
+    margin: 64px 64px;
+}
+
+.Mission_container {
+    margin: 64px -4px;
+}
+
+.Vision_container {
+    margin: 64px 64px;
+}
+
+@media screen and (max-width:600px) and (min-width:300px) {
+
+    .About_us_conatiner {
+        margin: 64px 16px;
+    }
+
+    .Vision_container {
+        margin: 64px 16px;
+    }
+
+    .Mission_container {
+        margin: 64px 16px;
+    }
+}
